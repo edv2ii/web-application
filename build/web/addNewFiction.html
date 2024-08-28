@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+addNewFood.html
+เพื่อรับข้อมูลอาหารจากผู้ใช้งาน
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div>เพิ่มนิยาย</div>
+        <form action="AddNewFictionServlet" method="post">
+            ชื่อ: <input type="text" name="fictionName"><br/>
+            ภาษา :
+            <select name="fictionLanguage">
+                <option value="ไทย">ไทย</option>
+                <option value="จีน">จีน</option>
+                <option value="ญี่ปุ่น">ญี่ปุ่น</option>
+                <option value="เกาหลี">เกาหลี</option>
+            </select>   
+            <br/>แนว:<br/> 
+           <input type="checkbox" name="fictionType" value="แอคชัน" />  แอคชัน<br/>
+           <input type="checkbox" name="fictionType" value="แฟนตาซี"/>แฟนตาซี<br/>
+           <input type="checkbox" name="fictionType" value="ตลก"/> ตลก<br/>
+           <input type="checkbox" name="fictionType" value="ดราม่า"/> ดราม่า<br/>
+           <input type="checkbox" name="fictionType" value="โรแมนติก"/> โรแมนติก<br/>
+           <input type="checkbox" name="fictionType" value="วิทยาศาสตร์"/> วิทยาศาสตร์<br/>
+           <input type="checkbox" name="fictionType" value="วาย"/> วาย<br/>
+           <input type="checkbox" name="fictionType" value="ระทึกขวัญ"/> ระทึกขวัญ<br/>
+            เนื้อเรื่อง<br/>
+           <input type="radio" name="story" value="จบแล้ว" /> จบแล้ว
+           <input type="radio" name="story" value="ยังไม่จบ"/> ยังไม่จบ
+           <br/>
+           ราคา <input type="text" name="fictionPrice"> <br/>
+            <button type="submit" value="เพิ่มนิยาย">เพิ่มนิยาย<button/>
+        </form>
+    </body>
+</html>
